@@ -40,9 +40,11 @@
       },
       "locked": {
         "lastModified": 1669987145,
-        "narHash": "sha256-i4mqJHTp7jq+OZwQ0G5UV0YpXMoQtNNiC8J262NT/X0=",
-        "type": "git",
-        "url": "file:///home/asymmetric/code/poetry2nix"
+        "narHash": "sha256-2KiOct6e31Af5OEtiznc9z+HiwWvCr/FRoywvUQNHzg=",
+        "owner": "nix-community",
+        "repo": "poetry2nix",
+        "rev": "54b4cf15576df4d0f34b156a77e24e90529b0126",
+        "type": "github"
       },
       "original": {
         "owner": "nix-community",
