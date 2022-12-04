@@ -21,9 +21,11 @@
         default = pkgs.poetry2nix.mkPoetryApplication {
           projectDir = ./.;
           python = pkgs.python39;
-          overrides = [
-            pkgs.poetry2nix.defaultPoetryOverrides
-          ];
+          overrides = pkgs.poetry2nix.overrides.withDefaults (
+            final: prev: {
+              panel = prev.panel.override { preferWheel = true; };
+            }
+          );
         };
       };
     };
