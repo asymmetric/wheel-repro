@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "wheel-repro"
+version = "0.1.0"
+description = ""
+authors = ["Lorenzo Manacorda <lorenzo@mailbox.org>"]
+readme = "README.md"
+packages = [{include = "wheel_repro"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+panel = "^0.14.0"
+
+[tool.poetry.scripts]
+main = "wheel_repro.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
