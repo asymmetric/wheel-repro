@@ -14,7 +14,10 @@
       name = "wheel-repro";
       system = "x86_64-linux";
 
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs {
+        inherit system;
+        overlays = [ poetry2nix.overlay ];
+      };
     in
     {
       packages.${system} = {
